@@ -24,3 +24,11 @@ def lengthOfLongestSubstring(s):
             max_length = max(max_length, right - left + 1)
 
         return max_length
+'''
+Time Complexity : O(n) 
+        Each character in the string s is processed at most twice — once when the right pointer moves forward, 
+        and once when the left pointer catches up to remove duplicates.
+        Therefore, the total number of operations is proportional to the length of the string n.
+Space Complexity : O(k)
+        where k is the number of unique characters preset in the given string s
+'''
